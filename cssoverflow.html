@@ -4,6 +4,105 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Overflow</title>
+    <style>
+      .container {
+        margin: 0 auto;
+        /* border: 2px solid green; */
+        max-width: 70%;
+      }
+      .test {
+        width: 300px;
+        /* border: 2px solid red; */
+        margin: 0 auto;
+        height: 200px;
+        /* overflow: hidden; */
+      }
+      #test11 {
+        overflow: scroll;
+        overflow-x: hidden;
+      }
+      #test22 {
+        overflow: auto;
+      }
+      .ellipsis {
+        width: 300px;
+        height: 20px;
+        white-space: nowrap;
+        overflow: hidden;
+        /* border: 2px solid red; */
+        text-overflow: ellipsis;
+        margin: 50px auto;
+      }
+
+      /* .higest-height {
+        height: 20px;
+      } */
+
+      /* .test-2 {
+        display: none;
+      } */
+    </style>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <!-- it will show exactly the same word what is written on the title od <p title=""> </p>  tag. -->
+      <!-- title=" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus
+        maiores commodi omnis doloribus molestias fugit vero quibusdam,
+        voluptatem sapiente pariatur vitae eaque et accusantium rerum facilis!
+        Doloremque quisquam ipsum error." -->
+
+      <p
+        title="See more bitch!!!!!!!!! come one see the raw code "
+        class="ellipsis"
+      >
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus
+        maiores commodi omnis doloribus molestias fugit vero quibusdam,
+        voluptatem sapiente pariatur vitae eaque et accusantium rerum facilis!
+        Doloremque quisquam ipsum error.
+      </p>
+    </header>
+    <!-- .container>.test*2>h2{This is my test - $}+p>lorem200 -->
+    <div class="container">
+      <div id="test11" class="test">
+        <h2>This is my test - 1</h2>
+        <p class="text-12">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id velit,
+          aspernatur repudiandae ratione sequi totam neque temporibus tempora
+          expedita maiores iste itaque mollitia odit commodi praesentium
+          inventore ducimus est? Consequuntur repellat cum corporis vitae fugiat
+          sint quis voluptate voluptates placeat perspiciatis maxime labore
+          ducimus accusamus laborum, itaque omnis quo ipsam rerum alias sed
+          beatae! Sed dicta ea quam. Reiciendis autem perspiciatis odit tempora,
+          inventore esse, blanditiis cupiditate voluptatem soluta nam
+          dignissimos dolorem eligendi unde molestias odio dicta similique
+          voluptas adipisci molestiae delectus veniam. Aspernatur, fugit! Quia
+          velit atque totam. Molestiae, laborum cumque ipsam porro expedita
+          aspernatur provident exercitationem, temporibus optio in alias soluta
+          omnis sunt quos nemo eligendi. Deleniti consectetur optio incidunt
+          pariatur obcaecati corrupti eveniet hic fuga animi molestias earum et,
+          placeat quae cumque consequatur minus deserunt tempore magni
+          temporibus repudiandae molestiae eius odit! Aliquam inventore,
+          consectetur tempore esse minima ut aut culpa. Quisquam sed tempora ab
+          laborum architecto saepe vitae. Soluta expedita in nihil mollitia,
+          sequi dignissimos odit quam ducimus, eveniet culpa tempore corporis ex
+          nobis recusandae nemo repellendus aut. Repudiandae, dicta atque iusto
+          eum deleniti autem laboriosam asperiores cum voluptatem similique,
+          laborum est ipsa dolore tempora saepe ut reiciendis laudantium eius!
+          Dolores eos esse iure aut eum?
+        </p>
+      </div>
+      <div id="test22" class="test">
+        <h2>This is my test - 2</h2>
+        <p class="test-2">
+          Officiis vitae ipsa ab expedita iste sapiente recusandae! Perferendis
+          voluptatem voluptatum fugit animi fugiat accusantium amet quam odit,
+          commodi porro omnis reprehenderit, ab minus numquam! Quisquam, eos
+          laboriosam? Corporis sed cum sequi reprehenderit soluta esse similique
+          explicabo, quaerat nemo modi optio accusantium suscipit nihil saepe
+          sit vitae eaque enim dolores laborum nisi? Perspiciatis inventore
+          excepturi laborum libero ullam omnis, cumque porro non illo maiores
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
