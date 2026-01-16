@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3 Transform tag</title>
+    <style>
+      .container1,
+      .container2,
+      .container3 {
+        border: 2px solid saddlebrown;
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        margin: 50px auto;
+      }
+      .innerdiv1,
+      .innerdiv2,
+      .innerdiv3 {
+        border: 2px solid rgb(14, 199, 97);
+        background-color: bisque;
+        width: 200px;
+        height: 200px;
+      }
+
+      .innerdiv1:hover {
+        transform: rotate(0deg);
+        background-color: gold;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .innerdiv1 {
+        transform: rotate(45deg);
+      }
+
+      .innerdiv2 {
+        /* transform: translateX(500px); */
+        transform: translateX(-50px) translateY(80px);
+      }
+      .innerdiv3 {
+        /* transform: scale(0.75); */
+        transform: scale(0.65) rotate(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container1">
+      <div class="innerdiv1">innerdiv 1</div>
+    </div>
+    <div class="container2">
+      <div class="innerdiv2">innerdiv 2</div>
+    </div>
+    <div class="container3">
+      <div class="innerdiv3">innerdiv 3</div>
+    </div>
+  </body>
+</html>
