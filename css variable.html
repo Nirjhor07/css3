@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variables</title>
+  </head>
+  <style>
+    /* css custom properties or css variables 
+    first the variables need to be set with values then call them or use them according to the need  */
+    :root {
+      --primary-color: rgb(28, 170, 83);
+      --bold: bolder;
+      --border: 2px solid red;
+      --bg-clr: yellow;
+      --bg-clr2: green;
+      --bdr2: 2px solid blue;
+    }
+    h2 {
+      color: var(--primary-color);
+      font-weight: var(--bold);
+      background-color: var(--bg-clr);
+    }
+    p {
+      color: var(--primary-color);
+      border: var(--border);
+      width: calc(100% - 10%);
+    }
+
+    .container2 {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 200px calc(100% - 200px);
+      grid-template-rows: 400px calc(100% - 600px);
+      padding: 2%;
+    }
+    .sidebar {
+      background-color: var(--bg-clr);
+      border: var(--border);
+    }
+    .main-content {
+      background-color: var(--bg-clr2);
+      border: var(--bdr2);
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h2>This is to practise CSS variables</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In doloremque
+        voluptatum totam amet adipisci, autem laboriosam maiores quaerat dolore
+        consectetur et nesciunt itaque dolorum eaque odit impedit libero quos
+        veritatis.
+      </p>
+    </div>
+
+    <div class="container2">
+      <div class="sidebar">sidebar</div>
+      <div class="main-content">main-content</div>
+    </div>
+  </body>
+</html>
